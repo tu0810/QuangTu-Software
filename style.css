@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-image: url('./img/banner.jpg');
+    height: auto;
+    color: white;
+
+}
+.width-80 {
+    display: flex;
+    
+}
+
+.menu-head{
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    width: 65%;
+
+
+}
+.menu-left{
+    display: flex;
+}
+/* .menu-left h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 17px;
+}
+
+.menu-left span {
+    margin: auto;
+    padding-left: 8px;
+    font-size: 8px;
+} */
+
+.menu-left img{
+    padding-top: 12px;
+    height: 22px;
+}
+.menu-right nav ul, .content-header ul{
+    display: flex;
+}
+
+.menu-right nav ul li, .content-header ul li {
+    list-style: none;
+    padding-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.menu-right nav ul li:last-child{
+    padding-right: 0;
+}
+
+.menu-right nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.content-header{
+    padding-top: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-header .color{
+    color: #0feb9e;
+}
+.content-header h2{
+    font-size: 62px;
+    font-weight: 300;;
+}
+.content-header h2 span{
+    font-weight: 800;;
+}
+.content-header h2 .content-header h3 .content-header h6{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.content-header h6::before, .content-header h6::after  {
+    color: #0feb9e;
+    content: "___";
+    position: relative;
+    top: -8px;
+    padding: 20px;
+}
+
+.content-header ul li i{
+    padding-top: 20px;
+
+}
+.content-header ul li i:hover{
+    color: red;
+}
