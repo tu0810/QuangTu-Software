@@ -64,7 +64,7 @@ header {
     align-items: center;
     justify-content: center;
 }
-.content-header .color{
+.content-header .color, .title-main_head, .icon_content--head i{
     color: #0feb9e;
 }
 .content-header h2{
@@ -78,13 +78,20 @@ header {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.content-header h6::before, .content-header h6::after  {
+.content-header h6::before, .content-header h6::after {
     color: #0feb9e;
-    content: "___";
+    content: "_____";
     position: relative;
     top: -8px;
     padding: 20px;
-}
+}   
+.sub-title_head::before, .sub-title_head::after  {
+    color: #0feb9e;
+    content: "___________";
+    position: relative;
+    top: -8px;
+    padding: 20px;
+}   
 
 .content-header ul li i{
     padding-top: 20px;
@@ -92,4 +99,59 @@ header {
 }
 .content-header ul li i:hover{
     color: red;
+}
+
+.icon_content--head i {
+    padding: 11px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+@media screen and (max-width: 567px){
+    .sub-title_head::before, .sub-title_head::after  {
+        content: "________";
+        
+    } 
+    
+}
+
+@media screen and (min-width: 568px){
+    /* .sub-title_head::before, .sub-title_head::after  {
+        color: red;
+        
+    }  */
+    
+}
+
+.hover_demo {
+    position: relative;
+}
+
+.hover_demo img {
+    width: 273px;
+    height: 253px;
+}
+.hover_demo img:hover + .box-hover{
+    display: block;
+    /* transform: rotate(-90deg) scale(1,1); */
+    transform: rotate(0deg);
+    backface-visibility: hidden;
+    display: block;
+    animation: mymove 5s infinite;
+    /* transition: ro; */
+}
+@keyframes mymove {
+    50% {transform: rotate(180deg)};
+}
+.box-hover {
+    color: red;
+    width: 273px;
+    height: 253px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    display: none;
+    transform: rotateY(180deg);
+
 }
